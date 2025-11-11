@@ -1,0 +1,51 @@
+.btn {
+  width: 100%;
+  height: 40px;
+  background: #ffc700;
+  border: none;
+  border-radius: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  outline: none;
+}
+
+/* Hover state */
+.btn:hover:not(:disabled) {
+  background: #ffd633;
+  box-shadow: 0 2px 8px rgba(255, 199, 0, 0.3);
+}
+
+/* Active state */
+.btn:active:not(:disabled) {
+  background: #e6b300;
+  transform: translateY(1px);
+  box-shadow: 0 1px 4px rgba(255, 199, 0, 0.2);
+}
+
+/* Disabled state */
+.btn:disabled {
+  background: #e0e0e0;
+  color: #9e9e9e;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Focus state - blue glow for keyboard navigation */
+.btn:focus-visible {
+  box-shadow: 0 0 0 4px rgba(43, 126, 255, 0.15);
+  outline: none;
+}
+
+/* Focus + Hover combined */
+.btn:focus-visible:hover:not(:disabled) {
+  box-shadow: 0 0 0 4px rgba(43, 126, 255, 0.15),
+    0 2px 8px rgba(255, 199, 0, 0.3);
+}
