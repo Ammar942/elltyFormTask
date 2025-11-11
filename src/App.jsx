@@ -60,9 +60,7 @@ function App() {
         </section>
 
         <section className="component-section">
-          <h2 className="section-title">
-            Page Selector Component (Frame 8445891)
-          </h2>
+          <h2 className="section-title">Page Selector Component</h2>
           <div className="centered-component">
             <PageSelector pages={pages} onDone={handlePageSelectorDone} />
           </div>
